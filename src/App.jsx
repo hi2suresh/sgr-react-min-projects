@@ -1,10 +1,11 @@
 import Counter from './projects/counter-project/Counter';
+import Todo from './projects/todo-project/Todo';
 
 function App() {
   return (
     <>
-      <h1>Simple Counter</h1>
-      <Counter />
+      <Todo />
+      {/* <Counter /> */}
     </>
   );
 }
