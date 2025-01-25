@@ -17,6 +17,11 @@ function Todo() {
     );
     setTodoText('');
   };
+
+  const handleDelete = (id) => {
+    const newTodos = todos.filter((todo) => todo.id !== id);
+    setTodos(newTodos);
+  };
   return (
     <div className="container">
       <form onSubmit={handleSubmit}>
@@ -35,7 +40,10 @@ function Todo() {
       <ul className="todos-list">
         {todos.map((todo) => (
           <li className="todo" key={todo.id}>
-            {todo.todoText}
+            <span> {todo.todoText}</span>
+            <button className="close" onClick={() => handleDelete(todo.id)}>
+              X
+            </button>
           </li>
         ))}
       </ul>
