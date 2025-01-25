@@ -1,10 +1,10 @@
-import Counter from './projects/counter-project/Counter';
-import Todo from './projects/todo-project/Todo';
+import Meals from './projects/meals-project/Meals';
 
 function App() {
   return (
     <>
-      <Todo />
+      <Meals />
+      {/* <Todo /> */}
       {/* <Counter /> */}
     </>
   );
