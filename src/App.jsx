@@ -1,9 +1,10 @@
-import Meals from './projects/meals-project/Meals';
+import AccordionItems from './projects/accordion-project/Accordion';
 
 function App() {
   return (
     <>
-      <Meals />
+      <AccordionItems />
+      {/* <Meals /> */}
       {/* <Todo /> */}
       {/* <Counter /> */}
     </>
